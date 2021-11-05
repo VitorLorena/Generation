@@ -1,0 +1,22 @@
+programa {
+	/*Receber valores de base e altura de um triângulo e verificar se são valores válidos
+	(positivos maiores que zero). Em caso afirmativo, calcular a área do triângulo.*/
+
+	funcao inicio(){
+	
+	real base, altura, area
+	
+	escreva("Valor da base do triângulo: ")
+	leia(base)
+	escreva("Valor da altura do triângulo: ")
+	leia(altura)
+		
+		se(base > 0 e altura > 0){
+		area = (base * altura) / 2
+		escreva("A área do triângulo é: ", area)
+		}
+		senao{
+		escreva("Os valores não são válidos")
+		}
+	}
+}

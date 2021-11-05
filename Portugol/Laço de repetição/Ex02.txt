@@ -1,0 +1,23 @@
+programa
+ {
+	/*Desenvolver um sistema que efetue a soma de todos os números ímpares que são
+	múltiplos de três e que se encontram no conjunto dos números de 1 até 500.*/
+	
+
+	funcao inicio() {
+	
+	inteiro soma = 0, cont, maior = 0, impar, multiplo
+
+	para(cont = 1; cont <= 500; cont++)
+
+	{
+            impar = cont % 2
+            multiplo = cont % 3
+
+            se(impar == 1 e multiplo == 0){
+                soma = soma + cont
+            }
+        }
+        escreva("soma dos numeros impares e multiplos de 3 e igual a " + soma)
+    }
+}

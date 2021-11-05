@@ -1,0 +1,30 @@
+programa { 
+	/*Construa um programa em c que, tendo como dados de entrada dois pontos
+quaisquer no plano, P(x1, y1) e P(x2, y2), escreva a distância entre eles.*/
+	
+	inclua biblioteca Matematica --> mat
+	funcao inicio() {
+
+	real x1, x2, y1, y2
+	real p1, p2 
+	real d
+
+	escreva("Digite o valor de X do primeiro ponto: ")
+	leia(x1)
+
+	escreva("Digite o valor de Y do primeiro ponto: ")
+	leia(y1)
+
+	escreva("Digite o valor de X do segundo ponto: ")
+	leia(x2)
+
+	escreva("Digite o valor de Y do segundo ponto: ")
+	leia(y2)
+
+	p1 = mat.potencia((x2-x1), 2.0)
+	p2 = mat.potencia((y2-y1), 2.0)
+	d = mat.raiz(p1 + p2, 2.0)
+
+	escreva("A distancia entre os dois pontos é: " , d)
+	}
+}

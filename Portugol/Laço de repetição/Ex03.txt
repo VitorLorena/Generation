@@ -1,0 +1,29 @@
+programa {
+    
+	/*Elaborar um programa que efetue a leitura sucessiva de valores numéricos e
+	apresente no final o total do somatório, a média e o total de valores lidos. O programa
+	deve fazer as leituras dos valores enquanto o usuário estiver fornecendo valores
+	positivos. Ou seja, o programa deve parar quando o usuário fornecer um valor
+	negativo.*/
+
+	funcao inicio(){
+
+        inteiro pos, neg, num, numTotal = 0
+        real med, soma = 0.0
+
+        escreva("Digite um número: ")
+        leia(num)
+
+        enquanto(num > 0){
+            numTotal++
+            soma = soma + num
+            med = soma / numTotal
+
+            escreva("\nA soma de todos os númers digitados é: ", soma)
+            escreva("\nA média de todos os números digitados é :", med)
+            escreva("\nDigite um número: ")
+            leia(num)
+
+        }
+    }
+}

@@ -1,0 +1,25 @@
+programa {
+
+	/*Faça um programa que mostre uma contagem na tela de 233 a 456, só que
+	contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando não estiver.*/
+
+	funcao inicio() {
+
+	inteiro valor, cont =233
+		
+	escreva(cont + "\n")
+	
+		faca {	
+			se(cont >= 300 e cont <= 400){
+				cont += 3
+				escreva(cont + "\n")
+			}
+			senao{
+				cont += 5
+				escreva(cont + "\n")
+				}
+		}
+		enquanto(cont <= 456)
+    }
+
+}

@@ -1,0 +1,32 @@
+programa
+{
+	//Um dado é lançado 10 vezes e o valor correspondente é anotado. Faça um programa
+	//que gere um vetor com os lançamentos, escreva esse vetor. A seguir determine e
+	//imprima a média aritmética dos lançamentos, contabilize e apresente também
+	//quantas foram as ocorrências da maior pontuação.
+	
+	funcao inicio()
+	{
+		inteiro dado[10]
+		inteiro soma = 0, media = 0, maiorp = 0
+
+		para(inteiro i = 0; i < 10; i++){
+			escreva("Qual número o dado caiu da " + (i + 1) + " vez? ")
+			leia(dado[i])
+			soma = soma + dado[i]
+			media = soma / (i+1)
+
+			se(dado[i] == 0 ou dado[i] >= 7){
+				escreva("Esse número não existe no dado. Faça novamente!")
+				pare
+			}
+			se(dado[i] == 6){
+				maiorp = maiorp + 1
+			}
+			se(i == 9){
+			escreva("A média dos valores do dado foi: " + media)
+			escreva("\nO dado caiu com o maior valor " + maiorp + " vezes")
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+programa
+{
+
+	//Crie um programa que receba valores do usuário para preencher uma matriz 3X3, e
+	//em seguida, exiba a soma dos valores dela e a soma dos valores da primeira
+	//diagonal, ou seja, diagonal principal.
+	funcao inicio()
+	{
+        inteiro n1 [3][3], soma=0, somaD=0
+
+        para(inteiro x = 0; x < 3; x++){
+           para(inteiro y = 0; y < 3; y++){
+
+           escreva("Digite um número: ")
+           leia(n1 [x][y])
+           soma = soma + n1[x][y]
+
+           se(x == y){
+               somaD = somaD + n1[x][y]
+
+           }
+
+           }
+        }
+        escreva("A soma dos valores da matrix é: " + soma)
+        escreva("\nE soma da diagonal é: "+ somaD)
+    }
+}

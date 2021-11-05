@@ -1,0 +1,30 @@
+programa{
+
+	/*Faça um sistema que leia um número inteiro e mostre uma mensagem indicando se este
+	número é par ou ímpar, e se é positivo ou negativo.*/
+
+	funcao inicio(){
+	
+	inteiro numero,resultado
+	
+	escreva("Digite um número: ")
+	leia(numero)
+	
+		se(numero >= 0) {
+		escreva("O número é positivo")	
+			}
+		senao{
+		escreva("O número é negativo")
+		}
+		
+	resultado = numero % 2
+	
+		se(resultado == 0){
+		escreva(" e é par")
+		}
+		senao{
+		escreva(" e é ímpar")
+		}
+
+	}
+}

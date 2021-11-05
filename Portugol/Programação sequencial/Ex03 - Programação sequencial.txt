@@ -1,0 +1,22 @@
+programa
+{
+	/*Faça um sistema que leia o tempo de duração de um evento em uma fábrica
+expressa em segundos e mostre-o expresso em horas, minutos e segundos.*/
+	funcao inicio()
+ {
+	inteiro segundos
+	inteiro minutos
+	inteiro horas
+	inteiro segundo
+
+		escreva("duração do evento em segundos : ")
+		leia(segundos)
+
+		horas = (segundos/3600)
+		minutos = (segundos%3600)/60
+		segundo = (segundos%3600)%60
+
+		escreva("o evento tem : " , horas , " horas, " , minutos , " minutos e " , segundo , " segundos")
+		
+	}
+}

@@ -1,0 +1,34 @@
+programa {
+	
+	//Escreva um sistema que leia três números inteiros e positivos (A, B, C) e
+	//calcule a seguinte expressão:
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio() {
+
+	real a, b, c, r, s, d
+
+	escreva("Entre com o valor de A: ")
+	leia(a)
+
+	escreva("entre com o valor de B: ")
+	leia(b)
+	
+	escreva("entre com o valor de C: ")
+	leia(c)
+
+	//cálculo de potenciação
+	r = mat.potencia((a+b), 2.0)
+	escreva("O valor de R é: " + r)
+
+	s = mat.potencia((b+c), 2.0)
+	escreva("\nO valor de S é: " + s)
+
+	// + soma e / divisão
+	d = r + s
+	d = d / 2.0
+	
+	escreva("\nO valor de D é: " + d)
+	
+	}
+}

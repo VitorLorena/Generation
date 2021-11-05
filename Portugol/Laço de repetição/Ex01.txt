@@ -1,0 +1,46 @@
+programa {
+    
+	/*A prefeitura de uma cidade fez uma pesquisa entre 20 de seus habitantes,
+	coletando dados sobre o salário e número de filhos. A prefeitura deseja saber:  
+	a) média do salário da população;
+	b) média do número de filhos;
+	c) maior salário;
+	d) percentual de pessoas com salário até R$100,00.*/
+
+	funcao inicio() {
+	
+	real sal, somasal = 0.0, somanf = 0.0, 
+	mediasal, medianf, maiorsal = 0.0, 
+	perc100 = 0.0, cont100 = 0.0
+
+	inteiro nf, hab = 20, x 
+
+	para(x=1; x <= hab; x++){
+		escreva("Digite o salário do habitante: ")
+		leia(sal)
+
+		escreva("Digite a quantidade de filhos: ")
+		leia(nf)
+
+		somasal = somasal + sal
+		somanf  = somanf + nf
+
+		se(sal > maiorsal){
+			maiorsal = sal
+		}
+
+		se(sal <= 100){
+			cont100++
+		}
+	}
+		mediasal = somasal / hab
+		medianf  = somanf  / hab
+
+		perc100 = (cont100*100) / hab
+
+		escreva("\nMédia salárial dos habitantes: " + mediasal)
+		escreva("\nMédia de filhos dos habitantes: " + medianf)
+		escreva("\nMaior salário: " + maiorsal)
+		escreva("\nPorcentagem de habitantes até R$ 100.00: " + perc100 + "%")
+	}
+}

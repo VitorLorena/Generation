@@ -1,0 +1,40 @@
+programa
+{
+	/*Desenvolva um sistema em que:
+	Leia 4 (quatro) números;
+	Calcule o quadrado de cada um;
+	Se o valor resultante do quadrado do terceiro for &gt;= 1000, imprima-o e finalize;
+	Caso contrário, imprima os valores lidos e seus respectivos quadrados.*/
+	
+
+	inclua biblioteca Matematica --> mat
+	funcao inicio()
+	{
+		inteiro numero1,numero2,numero3,numero4
+		inteiro elevado1,elevado2,elevado3,elevado4
+
+		escreva("Digite o numero 1: ")
+		leia(numero1)
+		escreva("Digite o numero 2: ")
+		leia(numero2)
+		escreva("Digite o numero 3: ")
+		leia(numero3)
+		escreva("Digite o numero 4: ")
+		leia(numero4)
+
+		elevado1 = mat.potencia(numero1, 2)
+		elevado2 = mat.potencia(numero2, 2)
+		elevado3 = mat.potencia(numero3, 2)
+		elevado4 = mat.potencia(numero4, 2)
+
+		se(elevado3 >= 1000){
+		escreva("O resultado do terceiro número é: ",elevado3)
+		}
+		senao{
+		escreva("\nO resultado do primeiro número é: ",elevado1)
+		escreva("\nO resultado do segundo número é: ",elevado2)
+		escreva("\nO resultado do terceiro número é: ",elevado3)
+		escreva("\nO resultado do quarto número é: ",elevado4)
+		}
+	}
+}

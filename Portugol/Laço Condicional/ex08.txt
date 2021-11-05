@@ -1,0 +1,20 @@
+programa {
+
+	/*Construa um sistema para ler uma variável numérica N e imprimi-la somente se a mesma
+	for maior que 100, caso contrário imprimi-la com o valor zero.*/	
+
+	funcao inicio(){
+	
+	real N
+	
+	escreva("Digite um número: ")
+	leia(N)
+	
+		se(N > 100){
+		escreva(N)
+		}
+		senao{
+		escreva("0")
+		}
+	}
+}
