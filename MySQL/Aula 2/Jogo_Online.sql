@@ -39,8 +39,8 @@ select * from tb_personagem where poder > 2000;
 select * from tb_personagem where defesa < 1000 and 2000;
 
 select * from tb_personagem
-inner join tb_classe on tb_classe.id = tb_personagem.id;
+inner join tb_classe on tb_classe.id = tb_personagem.classe_id;
 
 select tb_classe.funçao, tb_personagem.nome from tb_personagem
-inner join tb_classe on tb_classe.id = tb_personagem.id
+inner join tb_classe on tb_classe.id = tb_personagem.classe_id
 where tb_classe.funçao like "%Ass%"
