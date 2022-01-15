@@ -7,14 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Olá, mundo!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    <title>Spider Site</title>
   </head>
   <body>
     
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+        <a class="navbar-brand" href="#"><img src="https://assets.turbologo.com/blog/pt/2019/10/19133659/spiderman.jpg" alt="Logo" height="50px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,10 +23,10 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+              <a class="nav-link" href="#"> HOME <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#Sobre">Atores</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +40,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
+              <a class="nav-link disabled" href="#historia">Historia</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -49,67 +50,69 @@
         </div>
       </nav>
 
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="http://www.osmais.com/wallpapers/201207/homem-aranha-wallpaper-1280x720.jpg" alt="primeiro Slide">
+      <div id='carousel' class="row py-3 m-0 d-flex flex-column align-items-center justify-content-center bg-light overflow-hidden">>
+        <div id="carouselExampleControls" class="carousel slide carousel-fade w-50 m-0 p-0" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://sm.ign.com/ign_br/screenshot/default/homem-aranha-2_z9rn.jpg" alt="primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://hbomax-images.warnermediacdn.com/images/GYGVHLA01LJyaogEAAAAd/tileburnedin?size=1280x720&partner=hbomaxcom&language=pt-br&v=94eb5e19c5eeb37eadbcfc2e7d7dcfef&host=art-gallery-latam.api.hbo.com&w=1280" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://sm.ign.com/ign_br/feature/1/17-things-/17-things-we-learned-on-the-set-of-spider-man-homecoming_kt68.jpg" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://hbomax-images.warnermediacdn.com/images/GYGVHLA01LJyaogEAAAAd/tileburnedin?size=1280x720&partner=hbomaxcom&language=pt-br&v=94eb5e19c5eeb37eadbcfc2e7d7dcfef&host=art-gallery-latam.api.hbo.com&w=1280" alt="Segundo Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://sm.ign.com/ign_br/feature/1/17-things-/17-things-we-learned-on-the-set-of-spider-man-homecoming_kt68.jpg" alt="Terceiro Slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
       </div>
 
-      <div class="jumbotron jumbotron-fluid bg-info">
+      <div id="Sobre" class="jumbotron jumbotron-primary bg-info row mt-5 mp-5">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+          <h1 class="display-4">Sobre os atores</h1>
+          <p class="lead">Veja os atores que marcaram época na pele do homem da teia.</p>
         </div>
       </div>
 
       <div class="container">
         <div class="card-group">
             <div class="card">
-              <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+              <img class="card-img-top" src="https://jovemnerd.com.br/wp-content/uploads/ads_tobey_maguire.jpg" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+                <h5 class="card-title">Tobey Maguire</h5>
+                <p class="card-text">Tobey Maguire viveu o Homem-Aranha em três filmes Homem-Aranha (2002), Homem-Aranha 2 (2004) e Homem-Aranha 3 (2007).</p>
                 <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+              <img class="card-img-top" src="https://br.web.img2.acsta.net/newsv7/21/05/05/15/44/1774000.jpg" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                <h5 class="card-title">Andrew Garfield</h5>
+                <p class="card-text">Andrew Garfield interpretou o Spider em dois filmes, O Espetacular Homem-Aranha (2012) e O Espetacular Homem-Aranha 2 – A Ameaça de Electro (2014).</p>
                 <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
               </div>
             </div>
                 <div class="card">
-              <img class="card-img-top" src=".../100px180/" alt="Imagem de capa do card">
+              <img class="card-img-top" src="https://i0.wp.com/popoca.com.br/wp-content/uploads/2021/02/Homem-Aranha-3_.jpg?fit=1000%2C563&ssl=1" alt="Imagem de capa do card">
               <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+                <h5 class="card-title">Tom Holland</h5>
+                <p class="card-text">Tom Holland teve seus filmes proprios em Homem-Aranha: De Volta ao Lar (2017), e Homem-Aranha: Longe de Casa (2019), além dos filmes do MCU como Capitão América: Guerra Civil(2016), Vingadores: Guerra Infinita (2018) e Vingadores: Ultimato (2019).</p>
                 <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
                 </div>
             </div>
-          </div>
+          </div> 
       
 
-      <div class="row mt-5 mp-5">
+      <div id="historia" class="row mt-5 mp-5">
           <div class="col-md-6">
-              <h3> Homem-Aranha </h3>
+              <h3 class="text-center text-danger mb-3 font-weight-bold"> Homem-Aranha </h3>
               <p>
                 O Homem-Aranha é um dos heróis mais populares de todo o mundo. Criado para os quadrinhos, e
                 le foi adaptado para várias mídias e é de fácil identificação para praticamente qualquer leitor.
@@ -129,9 +132,9 @@
         </div>
       </div>
 
-      <div class="row mb-5">
+      <div class="row mt-5 mb-5">
         <div class="col-md-12">
-            <h4 class="text-center">
+            <h4 class="text-center text-danger mb-3 font-weight-bold">
                 Entre em contato com a gente
             </h4>
         </div>
@@ -140,12 +143,21 @@
       <div class="row d-flex align-items-center">
           <div class="com-md-6">
             <form>
+                <label for="exampleFormControlInput1">Nome:</label>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Sobrenome">
+                    </div>
+                  </div>
                 <div class="form-group">
-                  <label for="exampleFormControlInput1">Endereço de email</label>
+                  <label for="exampleFormControlInput1">Endereço de email:</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
                 </div>
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Mande uma mensagem</label>
+                  <label for="exampleFormControlTextarea1">Mande uma mensagem:</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 
@@ -165,9 +177,7 @@
       <div class="row mb-3">
         <div class="col-md-12 d-flex justify-content-center">
       
-            <a href="https://www.linkedin.com/" target="_blank" class="p-3">
-              <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do Linkedin">
-            </a>
+            <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/vitor-lorena/" target="_blank" height="50px"></a>
 
         </div>
       </div>
